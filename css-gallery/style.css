@@ -2,9 +2,14 @@
 	box-sizing :border-box;
 }
 #menu {
+	padding: 15px;
 	background:	#F0FFFF;
-	height: 50px;}
+	text-align: center;
+	border-bottom: 2px solid #dddddd
+
+}
 #menu a {
+	padding: 83px;
 	font-size: 20px;
 	text-decoration: none;
 }
