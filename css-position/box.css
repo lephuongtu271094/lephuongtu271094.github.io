@@ -1,0 +1,8 @@
+.box {
+	padding: 13px;
+	margin-top: 15px;
+	float: left;
+	width: 33.33%;
+	border: 5px solid #09f209;
+	border-top-width : 5px; 
+}
