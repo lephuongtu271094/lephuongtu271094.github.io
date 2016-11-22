@@ -1,0 +1,57 @@
+.wrap {
+	width: 425px;
+	height: 500px;
+	margin: 75px auto;
+	background: black;
+	text-align: center;
+	border-radius: 50px;
+}
+h1{
+padding-top: 20px;
+font-size: 40px;
+color: red;
+}
+
+#ketqua {
+	text-align: right;
+	font-size: 30px;
+	width: 315px;
+	height: 50px;
+	margin: 0 0 20px 0 ;
+	border-radius: 5px;
+}
+.num-cl{
+	color: red;
+	width: 70px;
+	height: 50px;
+	margin: 5px 5px 5px 5px;
+	border-radius: 5px;
+	font-size: 25px;
+
+}
+
+.toantu-cl{
+	color: red;
+	width: 70px;
+	height: 50px;
+	margin: 5px 5px 5px 5px;
+	border-radius: 5px;
+	font-size: 25px;
+}
+.del {
+	width: 155px;
+	height: 50px;
+	margin: 5px 5px 5px 5px;
+	border-radius: 5px;
+	color: red;
+	font-size: 25px;
+}
+
+.no {
+	font-size: 25px;
+	width: 155px;
+	height: 50px;
+	margin: 5px 5px 5px 5px;
+	border-radius: 5px;
+	color: red;
+}

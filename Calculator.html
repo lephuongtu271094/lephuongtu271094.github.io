@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="Calculator.css">
+</head>
+<body>
+
+	<div class="wrap">
+		<h1>Calculator</h1>
+
+		<input type="text" id="ketqua"/> <br/>
+		<div id="top-nut">
+			<button class="del" id="delete" value="delete" onclick="del()">Delete</button>
+			<button value="%" class="btn-ha toantu-cl" onclick="phantram()">%</button>
+			<button value="+" class="btn-ha toantu-cl" onclick="cong()">+</button>
+		</div>
+		<div class="nut">
+			<button  value="7" class="btn-ha num-cl" onclick="num7()">7</button>
+			<button  value="8" class="btn-ha num-cl" onclick="num8()">8</button>
+			<button  value="9" class="btn-ha num-cl" onclick="num9()">9</button>
+			<button  value="-" class="btn-ha toantu-cl" onclick="tru()">-</button>
+		</div>
+		<div class="nut">
+			<button  value="4" class="btn-ha num-cl " onclick="num4()">4</button>
+			<button  value="5" class="btn-ha num-cl" onclick="num5()">5</button>
+			<button  value="6" class="btn-ha num-cl" onclick="num6()">6</button>
+			<button  value="*" class="btn-ha toantu-cl" onclick="nhan()">*</button>
+		</div>
+		<div class="nut">
+			<button  value="1" class="btn-ha num-cl " onclick="num1()">1</button>
+			<button  value="2" class="btn-ha num-cl" onclick="num2()">2</button>
+			<button  value="3" class="btn-ha num-cl" onclick="num3()">3</button>
+			<button  value="/" class="btn-ha toantu-cl" onclick="chia()">/</button>
+		<div class="nut">
+			<button  value="0" class="btn-ha num-cl no" id="delete" onclick="num0()">0</button>
+			<button  value="cham" class="btn-ha num-cl cham" onclick="cham()">.</button>
+			<button  value="="id="kq"class="num-cl" onclick="kq()">=</button>	
+		</div>
+	</div>
+
+	<script src="Calculator.js"></script>
+</body>
+</html>
