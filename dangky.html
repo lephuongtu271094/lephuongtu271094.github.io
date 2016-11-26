@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>dangky</title>
+</head>
+<body>
+	<h1>ĐĂNG KÝ THÀNH CÔNG</h1>
+	<script type="text/javascript">
+	function getParameterByName(name, url) {
+		if (!url) {
+			url = window.location.href;
+		}
+		name = name.replace(/[\[\]]/g, "\\$&");
+		var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+		results = regex.exec(url);
+		if (!results) return null;
+		if (!results[2]) return '';
+		return decodeURIComponent(results[2].replace(/\+/g, " "));
+	}
+	var Name=getParameterByName('hoten');
+	var diachi=getParameterByName('diachi');
+	var email=getParameterByName('email');
+	var phone=getParameterByName('sdt');
+	var nickname=getParameterByName('tendangnhap');
+	var ngay=getParameterByName('ngay');
+	var thang=getParameterByName('thang');
+	var nam=getParameterByName('nam');
+	var gioitinh=getParameterByName('gioitinh');
+
+
+	document.write("Họ và tên : "+ Name+"</br>");
+	document.write("Địa Chỉ : "+ diachi+"</br>");
+	document.write("Email : "+ email+"</br>");
+	document.write("Số điện thoại : "+ phone+"</br>");
+	document.write("Tên đăng nhập : "+ nickname+"</br>");
+	document.write("Ngày Sinh : "+ ngay+" Tháng  " +thang+ " Năm " +nam+"</br>");
+	document.write("Giới tính : "+ gioitinh+"</br>");
+	</script>
+</body>
+</html>

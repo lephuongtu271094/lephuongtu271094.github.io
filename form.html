@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>from</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+	<div id="warp">
+		<h1>ĐĂNG KÝ THÀNH VIÊN</h1>
+		<form action="dangky.html" id="form">
+			<div class="conten">
+				<input type="text" id="hoten" name="hoten" placeholder="Họ Và Tên"><span class="error"></span><br>
+				<input type="text" id="diachi" name="diachi" placeholder = "Địa chỉ"><span class="error"></span><br>
+				<input type="text" id="email" name="email" placeholder="Email"><span class="error"></span><br>
+				<input type="text" id="sdt" name="sdt" placeholder="Số Điện Thoại"><span class="error"></span><br>
+				<input type="text" id="tendangnhap"name="tendangnhap" placeholder="Tên Đăng Nhập"><span class="error"></span><br>
+				<input type= "password" id="mk" name="password" placeholder="Mật Khẩu"><span class="error"></span><br>
+				<input type="password" id="xnmk"name="xacnhanmk" placeholder="Nhập Lại Mật Khẩu"><span class="error"></span>
+			</div>
+			<div id="ngaysinh">
+				<b>Ngày Sinh :</b> 
+				<select id="select" name="ngay"><option>Ngày</option></select>
+				<select id="select1" name="thang"><option>Tháng</option></select>
+				<select id="select2" name="nam"><option>Năm</option></select><br> 
+			</div>
+			<div id="gt">
+				<b>Giới Tính : </b>
+				<label>
+					<input type="radio" name="gioitinh" value="Nam" class="gioitinh"><b>Nam</b>
+				</label>
+				<label>
+					<input type="radio" name="gioitinh" value="Nữ" class="gioitinh"><b>Nữ</b>
+				</label>
+				<br>
+			</div>
+			<div>
+				<input type="submit" value="đăng ký" id="dangky" name="submit" >
+			</div>			
+		</form>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript">
+		var ngay = document.getElementById('select');
+		var min = 1, max = 31; 
+
+		for(var i = min; i <= max ; i++){
+			var otp = document.createElement('option');
+			otp.value=i;
+			otp.innerHTML=i;
+			select.appendChild(otp);
+		}
+
+		var ngay = document.getElementById('select1');
+		var min = 1, max = 12; 
+
+		for(var i = min; i <= max ; i++){
+			var otp = document.createElement('option');
+			otp.value=i;
+			otp.innerHTML=i;
+			select1.appendChild(otp);
+		}
+
+		var ngay = document.getElementById('select2');
+		var min = 1980, max = 2020; 
+
+		for(var i = min; i <= max ; i++){
+			var otp = document.createElement('option');
+			otp.value=i;
+			otp.innerHTML=i;
+			select2.appendChild(otp);
+		}
+
+
+		$('#form').on('submit' , function(){
+			var isValid = true;
+			// họ tên
+			if ($('#hoten').val().trim()==''){
+				$('#hoten').next('span').text('Name is empty');
+				isValid = false;
+			} else {
+				$('#hoten').next('span').text('');
+			}
+			// địa chỉ
+			if ($('#diachi').val().trim()==''){
+				$('#diachi').next('span').text('Address is empty');
+				isValid = false;
+			} else {
+				$('#diachi').next('span').text('');
+			}
+
+			// email
+			if ($('#email').val().match(/^\w+[\w-\.]*\@\w+((-\w+)|(\w*))\.[a-z]{2,3}$/) == null){
+				$('#email').next('span').text('Email is invalid');
+				isValid = false;
+			} else {
+				$('#email').next('span').text('');
+			}
+			// username
+			if ($('#tendangnhap').val().trim()==''){
+				$('#tendangnhap').next('span').text('Username is empty');
+				isValid = false;
+			}else {
+				$('#tendangnhap').next('span').text('');
+			}
+			// password
+			if ($('#mk').val().match(/^[a-zA-Z]\w{3,14}$/)==null){
+				$('#mk').next('span').text('Password chứa ít nhất 4 kí tự và không quá 15 kí tự');
+				isValid = false;
+			} else {
+				$('#mk').next('span').text('');
+			}
+
+			// xác nhận mật khẩu
+			if($('#xnmk').val() != $('#mk').val()){
+				$('#xnmk').next('span').text('Password nhập lại chưa đúng');
+				isValid = false;	
+			}else{
+				$('#xnmk').next('span').text('');
+			}
+			// kiểm tra số 
+			if ($('#sdt').val().match(/^[0-9]+$/)==null){
+				$('#sdt').next('span').text('Số điện thoại phải là kiểu số');
+				isValid = false;
+			} else {
+				$('#sdt').next('span').text('');
+			}
+			return isValid;
+			})
+
+		</script>
+</body>
+</html>

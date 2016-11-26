@@ -1,0 +1,52 @@
+	body {
+		background-color: #e5e5e5; 
+
+	}
+	input {
+
+		border-radius: 5px;
+		margin-top: 15px;
+		height: 25px;
+		width: 300px;
+	}
+	b{
+		font-size: 20px;
+	}
+	select{
+		height: 25px;
+		width: 62px;
+		margin-top: 20px;
+		border-radius: 3px;
+	}
+	
+	#warp{
+		width: 500px;
+		margin: auto;
+		text-align: center;
+	}
+	.gioitinh{
+
+		height: 20px;
+		width: 50px;
+		margin-top: 20px;
+	}
+	#form{
+		width: 500px;
+		float: left;
+	}
+	#dangky{
+		float: left;
+		background-color: #56ffff;
+		height: 45px;
+	}
+	.error {
+		margin-top: 15px;
+		width: 195px;
+		float: right;
+		font-style: italic;
+		color: red;
+	}
+	.conten input {
+		float: left;
+	}
+	#gt , #ngaysinh ,h1 {float: left;}
