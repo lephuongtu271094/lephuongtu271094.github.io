@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	table,td ,th {
+		border: 1px solid #ffffff;
+		border-collapse: collapse;	
+	}
+	th ,td {
+		padding: 10px 30px 10px 10px;
+		text-transform: capitalize;
+	}
+	th {
+		text-align: left;
+	}
+	h1{
+		font-size: 50px;
+		font-family: cursive ;
+		text-align: center;
+	}
+	table{
+		margin: 43px;
+	}
+	tbody tr:hover {
+		background: #57cccc;
+	}
+	th:hover {
+		background: #57cccc;
+	}
+	th{
+		background: #009b9b;
+	}
+	tbody tr{
+		background: #02fcfc;
+	}
+	</style>
+	
+<body>
+</head>
+<body>
+<div>
+	<h1>Browser</h1>
+	<table id="mytable" class="sortable">
+		<thead>
+			<tr>
+				<th onclick="">browser</th>
+				<th>creator</th>
+				<th>cost(usd)</th>
+				<th>software license</th>
+				<th>curent layout engine</th	>	
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>w3m</td>
+				<td>akinori lto</td>
+				<td>free</td>
+				<td>mit</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>amaya</td>
+				<td>W3C , INRIA</td>
+				<td>free</td>
+				<td>W3C</td>
+				<td>amaya</td>
+			</tr>
+			<tr>
+				<td>google chrome</td>
+				<td>google</td>
+				<td>free</td>
+				<td>google chrome terms of service</td>
+				<td>blink</td>
+			</tr>
+			<tr>
+				<td>camino</td>
+				<td>the camino project</td>
+				<td>free</td>
+				<td>tri-license</td>
+				<td>gecko</td>
+			</tr>
+			<tr>
+				<td>mosaic</td>
+				<td>marc andreessen and eric bina , NCSA</td>
+				<td>non-commercial use</td>
+				<td>proprietary</td>
+				<td>built-in</td>
+			</tr>
+			<tr>
+				<td>avant</td>
+				<td>avant force</td>
+				<td>free</td>
+				<td>proprietary</td>
+				<td>tri-engine</td>
+			</tr>
+			<tr>
+				<td>mozilla firefox</td>
+				<td>mozilla foundation</td>
+				<td>free</td>
+				<td>MPL</td>
+				<td>gecko</td>
+			</tr>
+			<tr>
+				<td>mozilla application suite</td>
+				<td>mozilla foundation</td>
+				<td>free</td>
+				<td>tri-license</td>
+				<td>gecko</td>
+			</tr>
+			<tr>
+				<td>iCab</td>
+				<td>alexander clauss</td>
+				<td>$20(Pro)</td>
+				<td>proprietary</td>
+				<td>wepbKit</td>
+			</tr>
+			<tr>
+				<td>dooble</td>
+				<td>dooble team</td>
+				<td>free</td>
+				<td>GPL</td>
+				<td>wepbKit</td>
+			</tr>
+			<tr>
+				<td>internet explorer for mac(terminated)</td>
+				<td>microsoft</td>
+				<td>free</td>
+				<td>proprietary</td>
+				<td>tasman</td>
+			</tr>
+			<tr>
+				<td>internet explorer</td>
+				<td>microsoft , spylass</td>
+				<td>comes with windows</td>
+				<td>proprietary</td>
+				<td>trident</td>
+			</tr>
+			<tr>
+				<td>AOL explorer</td>
+				<td>america online , inc</td>
+				<td>free</td>
+				<td>proprietary</td>
+				<td>trident</td>
+			</tr>
+			<tr>
+				<td>wep</td>
+				<td>marco pesenti gritti</td>
+				<td>free</td>
+				<td>GPL</td>
+				<td>wepbKit</td>
+			</tr>
+			<tr>
+				<td>worldWideWeb(later renamed nexus)</td>
+				<td>tim berners-lee</td>
+				<td>free</td>
+				<td>public domain</td>
+				<td>neXTSTEP built-in</td>
+			</tr>
+			<tr>
+				<td>opera mobile</td>
+				<td>opera software</td>
+				<td>free</td>
+				<td>proprietary</td>
+				<td>presto</td>
+			</tr>
+			<tr>
+				<td>opera</td>
+				<td>opera software</td>
+				<td>free</td>
+				<td>proprietary</td>
+				<td>presto</td>
+			</tr>
+			<tr>
+				<td>netcaple browser(v.8)[note 2]</td>
+				<td>mercurial communications for AOL</td>
+				<td>free</td>
+				<td>proprietary</td>
+				<td>gecko , trident</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	$('th').click(function(){
+		    var table = $(this).parents('table').eq(0)
+		    var rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
+		    this.asc = !this.asc
+	    if (!this.asc){rows = rows.reverse()}
+	    for (var i = 0; i < rows.length; i++){table.append(rows[i])}
+	})
+
+	function comparer(index) {
+	    return function(a, b) {
+	        var valA = getCellValue(a, index), valB = getCellValue(b, index)
+	        return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.localeCompare(valB)
+	    }
+	}
+
+	function getCellValue(row, index){ 
+		return $(row).children('td').eq(index).html() 
+	}
+    </script>
+</body>
+</html>
