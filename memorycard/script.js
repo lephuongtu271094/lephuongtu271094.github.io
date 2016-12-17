@@ -3,7 +3,7 @@ var current = null;
 var point = 0;
 var isPlaying = false;
 var running = null;
-var normalTime = 60;
+var normalTime = 45;
 var hardTime = 30;
 var maxTime = remainingTime = normalTime;
 
@@ -130,6 +130,7 @@ function startGame(mode) {
     // khó
     maxTime = remainingTime = hardTime;
   }
+   console.log(maxTime);
 
   //đóng modal
   closeModal();
@@ -192,6 +193,7 @@ function openModal(type) {
   $('.modal').hide();
   // hiện modal ra 
   $('.modal.' + type).fadeIn();
+
 }
 
 function closeModal() {
