@@ -86,6 +86,7 @@ function flip(card) {
           stopGame();
           openModal('win');
           $('.btn-reset').css('opacity', '1');
+          $('.six-sec-ease-in-out').removeClass('animate');
 
         } else {
           // kích hoạt bấm tất cả các thẻ
@@ -180,7 +181,7 @@ function startGame(mode) {
       openModal('lose');
       $('.btn-reset').css('opacity', '1');
 
-      // bỏ class 5s
+      // bỏ class 10s
       $('.six-sec-ease-in-out').removeClass('animate');
     }
   }, 1000);
