@@ -130,7 +130,7 @@ function startGame(mode) {
     // khó
     maxTime = remainingTime = hardTime;
   }
-   console.log(maxTime);
+
 
   //đóng modal
   closeModal();
