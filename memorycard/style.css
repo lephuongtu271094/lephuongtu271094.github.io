@@ -159,3 +159,74 @@ border-radius: 5px;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
+
+.animate {
+  animation-name: example;
+  animation-duration: 10s;
+}
+
+@keyframes example {
+  0% {
+    background-color: #FFFFFF;
+  }
+  5% {
+    background-color: red;
+  }
+  10% {
+    background-color: #FFFFFF;
+  }
+  15% {
+    background-color: red;
+  }
+  20% {
+    background-color: #FFFFFF;
+  }
+  25% {
+    background-color: red;
+  }
+  30% {
+    background-color: #FFFFFF;
+  }
+  35% {
+    background-color: red;
+  }
+  40% {
+    background-color: #FFFFFF;
+  }
+  45% {
+    background-color: red;
+  }
+  50% {
+    background-color: #FFFFFF;
+  }
+  55% {
+    background-color: red;
+  }
+  60% {
+    background-color: #FFFFFF;
+  }
+  65% {
+    background-color: red;
+  }
+  70% {
+    background-color: #FFFFFF;
+  }
+  75% {
+    background-color: red;
+  }
+  80% {
+    background-color: #FFFFFF;
+  }
+  85% {
+    background-color: red;
+  }
+  90% {
+    background-color: #FFFFFF;
+  }
+  95% {
+    background-color: red;
+  }
+  100% {
+    background-color: #FFFFFF;
+  }
+}

@@ -3,8 +3,8 @@ var current = null;
 var point = 0;
 var isPlaying = false;
 var running = null;
-var normalTime = 50;
-var hardTime = 25;
+var normalTime = 60;
+var hardTime = 30;
 var maxTime = remainingTime = normalTime;
 
 // Hàm đảo vị trí các phần tử trong mảng
@@ -97,14 +97,15 @@ function flip(card) {
   }
 }
 
-  // thiết lập lại
+// thiết lập lại
 function loadContent() {
   // thanh thời gian
   //$('.progressbar').css('display', 'none');
   $('.progress').css('display', 'none');
   $(".six-sec-ease-in-out").animate({
-    width: "0%"
-  }, 1000);
+    width: "100%"
+  }, 1);
+  $('.six-sec-ease-in-out').css('background-color', '#32CD32');
 
   // đổi vị trí các quân bài
   cards = shuffle(cards);
@@ -149,12 +150,22 @@ function startGame(mode) {
   $('.progress').css('display', 'block');
   $('.six-sec-ease-in-out').css('transition', 'width ' + maxTime + 's ease-in-out');
   $(".six-sec-ease-in-out").animate({
-    width: "100%"
+    width: "0%"
   }, 1000);
   // start in under a sec
   running = setInterval(function() {
     remainingTime--;
     //$('progress').val(remainingTime / maxTime * 100);
+    //15s chuyển mầu vàng
+    if (remainingTime == 15) {
+
+      $('.six-sec-ease-in-out').css('background-color', 'yellow');
+    }
+    // 10s chạy hiệu ứng animate
+    if (remainingTime == 10) {
+
+      $('.six-sec-ease-in-out').addClass('animate');
+    }
 
     // hết giờ kết thúc game
     if (remainingTime == 0) {
@@ -168,6 +179,9 @@ function startGame(mode) {
       stopGame();
       openModal('lose');
       $('.btn-reset').css('opacity', '1');
+
+      // bỏ class 5s
+      $('.six-sec-ease-in-out').removeClass('animate');
     }
   }, 1000);
 }
