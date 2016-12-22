@@ -174,7 +174,7 @@ border-radius: 5px;
 
 .animate {
   animation-name: example;
-  animation-duration: 10s;
+  animation-duration: 13s;
 }
 
 @keyframes example {

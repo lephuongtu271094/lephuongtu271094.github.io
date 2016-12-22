@@ -87,6 +87,7 @@ function flip(card) {
           openModal('win');
           $('.btn-reset').css('opacity', '1');
           $('.six-sec-ease-in-out').removeClass('animate');
+          document.getElementById('10s-sound').load();
 
         } else {
           // kích hoạt bấm tất cả các thẻ
@@ -159,20 +160,23 @@ function startGame(mode) {
     remainingTime--;
     //$('progress').val(remainingTime / maxTime * 100);
     //15s chuyển mầu vàng
-    if (remainingTime == 15) {
+    if (remainingTime == 18) {
 
       $('.six-sec-ease-in-out').css('background-color', 'yellow');
     }
     // 10s chạy hiệu ứng animate
-    if (remainingTime == 10) {
+    if (remainingTime == 13) {
 
       $('.six-sec-ease-in-out').addClass('animate');
+      document.getElementById('sound-game').load();
+      document.getElementById('10s-sound').play();
     }
 
     // hết giờ kết thúc game
     if (remainingTime == 0) {
       //tắt nhạc nền
       document.getElementById('sound-game').load();
+
 
       //nhạc bật nhạc thua
       document.getElementById('lose-sound').play();
@@ -183,6 +187,7 @@ function startGame(mode) {
       $('.btn-reset').css('opacity', '1');
 
       // bỏ class 10s
+      document.getElementById('10s-sound').load();
       $('.six-sec-ease-in-out').removeClass('animate');
     }
   }, 1000);
