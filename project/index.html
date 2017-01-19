@@ -1,124 +1,165 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>web dịch vụ</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>web dịch vụ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <header>
-<div class="container">
-	<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Trang Chủ</a>
-    </div>
-      <form class="navbar-form navbar-left">
-       <select  class="form-control">
-            <option>- Quận / Huyện -</option>
-            <option>Quận Hoàn Kiếm</option>
-            <option>Quận Hai Bà Chưng</option>
-            <option>Quận Ba Đình</option>
-            <option>Quận Thanh Xuân</option>
-            <option>Quận Hoàng Mai</option>
-            <option>Quận Đống Đa</option>
-            <option>Quận Long Biên</option>
-            <option>Quận Hà Đông</option>
-            <option>Quận Bắc Từ Liêm</option>
-            <option>Quận Nam Từ Liêm</option>
-            <option>Huyện Đông Anh</option>
-          </select>
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <button class="btn btn-default">Submit</button>
-        
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-</div>
+    <div class="container">
+        <nav class="navbar navbar-default">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Trang Chủ</a>
+            </div>
+            <form class="navbar-form navbar-left">
+
+                <select class="form-control">
+                    <option>- Thành Phố -</option>
+                    <option>Hà Nội</option>
+                    <option>Hồ chí minh</option>
+                </select>
+                <select class="form-control">
+                    <option>- Quận / Huyện -</option>
+                    <option>Quận Hoàn Kiếm</option>
+                    <option>Quận Hai Bà Chưng</option>
+                    <option>Quận Ba Đình</option>
+                    <option>Quận Thanh Xuân</option>
+                    <option>Quận Hoàng Mai</option>
+                    <option>Quận Đống Đa</option>
+                    <option>Quận Long Biên</option>
+                    <option>Quận Hà Đông</option>
+                    <option>Quận Bắc Từ Liêm</option>
+                    <option>Quận Nam Từ Liêm</option>
+                    <option>Huyện Đông Anh</option>
+                </select>
+                <div class="form-group">
+                    <input type="text" class="form-control search" placeholder="Tìm Kiếm ...">
+                    <label class="btn glyphicon glyphicon-search icon-search"></label>
+                </div>
+
+            </form>
+            <ul class="nav navbar-nav navbar-right btn-dangnhap">
+                <button class="btn btn-primary btn-dangnhap2 navbar-btn ">Đăng nhập</button>
+
+            </ul>
+            </div><!-- /.navbar-collapse -->
+
+        </nav>
+    </div><!-- /.container -->
+
 </header>
 <section>
 
-<div class="container ">
-  <div class="row">
-    <div class="col-md-2  ">
-      <ul class="nav nav-stacked">
-        <li class="dropdown">
-          <div class="btn-group">
-            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-              Ăn uống
-             <i class="glyphicon glyphicon-menu-right" style="float: right;"></i>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-left">
-              <li><a href="#">Quán coffee</a></li>
-              <li><a href="#">Nhà Hàng</a></li>
-            </ul>
-          </div> <!-- btn-group -->
-        </li><!--  dropdown -->
-        <li class="dropdown">
-          <div class="btn-group">
-            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-              Làm đẹp
-              <i class="glyphicon glyphicon-menu-right"></i>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-left">
-              <li><a href="#">Tiệm cắt tóc</a></li>
-              <li><a href="#">thẩm mĩ viện</a></li>
-              <li><a href="#">tiệm nail</a></li>
-              <li><a href="#">spa/massage</a></li>
-            </ul>
-          </div><!-- btn-group -->
-        </li><!--  dropdown -->
-        <li class="dropdown">
-          <div class="btn-group">
-            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-              Sức khỏe
-             <i class="glyphicon glyphicon-menu-right" style="float: right;"></i>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-left">
-              <li><a href="#">phòng khám</a></li>
-              <li><a href="#">nha khoa</a></li>
-            </ul>
-          </div> <!-- btn-group -->
-        </li><!--  dropdown -->
-        <li class="dropdown">
-          <div class="btn-group">
-            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-              Giải trí
-             <i class="glyphicon glyphicon-menu-right" style="float: right;"></i>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-left">
-              <li><a href="#">Khu chơi game</a></li>
-            </ul>
-          </div> <!-- btn-group -->
-        </li><!--  dropdown -->
-      </ul><!-- nav nav-stacked -->
-    </div>
-  </div>  
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="navbar navbar-default">
+                    <!-- Brand and toggle get grouped for better mobile display -->
 
-  
-</div><!-- container -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed  " data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Ăn uống
+                                    <i class="glyphicon glyphicon-menu-right"></i>
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-left">
+                                    <li><a href="#">Quán coffee</a></li>
+                                    <li><a href="#">Nhà hàng</a></li>
+                                    <li><a href="#">Quán ăn</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Làm đẹp
+                                    <i class="glyphicon glyphicon-menu-right"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-left">
+                                    <li><a href="#">Tiệm cắt tóc/Gội đầu</a></li>
+                                    <li><a href="#">Thẩm mĩ viện</a></li>
+                                    <li><a href="#">Tiệm nail</a></li>
+                                    <li><a href="#">Spa/massage</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Sức khỏe
+                                    <i class="glyphicon glyphicon-menu-right"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-left">
+                                    <li><a href="#">Tập thể hình</a></li>
+                                    <li><a href="#">Tập yoga</a></li>
+                                    <li><a href="#">Phòng khám</a></li>
+                                    <li><a href="#">Nha khoa</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Giải trí
+                                    <i class="glyphicon glyphicon-menu-right" style="float: right;"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-left">
+                                    <li><a href="#">Khu chơi game</a></li>
+                                    <li><a href="#">Rạp chiếu phim</a></li>
+                                    <li><a href="#">Karaoke</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Mua sắm
+                                    <i class="glyphicon glyphicon-menu-right" style="float: right;"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-left">
+                                    <li><a href="#">Trung tâm tương mại</a></li>
+                                    <li><a href="#">Siêu thị</a></li>
+                                    <li><a href="#">Cửa hàng</a></li>
+                                    <li><a href="#">Chợ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </div><!-- col-md-2 -->
+            <div class="col-md-10">
+              
+            </div>
+        </div> <!--  row  dropdown-->
+    </div><!-- container -->
 </section>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 <script type="text/javascript" src="java.js"></script>
 
 </body>
