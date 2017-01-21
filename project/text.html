@@ -1,121 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>web dịch vụ</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <style type="text/css">
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: #f8f8f8;
-            height: 2000px;
-            
-        }
-
-        .dropdown-menu-left {
-            top: 0;
-            left: 100%;
-        }
-
-        .navbar {
-            margin-bottom: 1px;
-            background-color: rgba(255, 255, 255, 0);;
-            border-color: white;
-            box-shadow: 0 2px 3px rgba(0,0,0,.4);
-        }
-
-        .btn-dangnhap {
-            margin: 0 10px;
-        }
-
-        .form-group {
-            position: relative;
-        }
-
-        .form-control {
-            margin-bottom: 5px;
-            border-radius: 50px;
-        }
-
-        .icon-search {
-            position: absolute;
-            right: 10px;
-            border-radius: 50px;
-        }
-
-        @media (max-width: 768px) {
-            .btn-dangnhap2 {
-                width: 100%;
-            }
-            .navbar-fixed-top{
-                position: static;
-            }
-            .affix{
-                position: static;
-            }
-        }
-
-        /*dropdown*/
-        @media (min-width: 768px) {
-            body{
-                padding-top: 52px;
-            }
-            .affix{
-                top: 50px;
-            }
-            .navbar-form .form-control {
-                margin: 0 10px;
-            }
-
-            .navbar-header {
-                margin: 0 5% 0 4%;
-            }
-
-            .navber-form {
-                border-color: white;
-            }
-
-            .navbar {
-                border-radius: 0 0 4px 4px;
-            }
-        }
-        .container-fluid {
-            padding: 0;
-        }
-        @media (min-width: 1200px) {
-            .container-dropdown {
-                width: 553px;
-            }
-
-        }
-        
-
-    </style>
+  <title>web dịch vụ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="font/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-<header>
- 
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Trang Chủ</a>
-            </div>
-            <form class="navbar-form navbar-left">
 
-                <select class="form-control">
+<body>
+  <header>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Trang Chủ</a>
+        </div>
+        <form class="navbar-form navbar-left">
+
+          <select class="form-control">
                     <option>- Thành Phố -</option>
                     <option>Hà Nội</option>
                     <option>Hồ chí minh</option>
                 </select>
-                <select class="form-control">
+          <select class="form-control">
                     <option>- Quận / Huyện -</option>
                     <option>Quận Hoàn Kiếm</option>
                     <option>Quận Hai Bà Chưng</option>
@@ -129,148 +41,239 @@
                     <option>Quận Nam Từ Liêm</option>
                     <option>Huyện Đông Anh</option>
                 </select>
-                <div class="form-group">
-                    <input type="text" class="form-control search" placeholder="Tìm Kiếm ...">
-                    <label class="btn glyphicon glyphicon-search icon-search"></label>
-                </div>
+          <div class="form-group">
+            <input type="text" class="form-control search" placeholder="Tìm Kiếm ..." />
+            <label class="btn glyphicon glyphicon-search icon-search"></label>
+          </div>
 
-            </form>
-            <ul class="nav navbar-nav navbar-right btn-dangnhap">
-                <button class="btn btn-primary btn-dangnhap2 navbar-btn ">Đăng nhập</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right btn-dangnhap">
+          <button class="btn btn-primary btn-dangnhap2 navbar-btn ">Đăng nhập</button>
 
-            </ul>
-            </div><!-- /.navbar-collapse -->
-        </div>
-    </nav><!-- navbar navbar-default -->
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+      </div>
+    </nav>
+    <!-- navbar navbar-default -->
 
     <div class="container-fluid">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-              </ol>
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
 
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <img src="image/banner.jpg" alt="..." class="img-responsive">
-                  <div class="carousel-caption">
-                  </div>
-                </div>
-                <div class="item">
-                  <img src="image/banner.jpg" alt="..." class="img-responsive">
-                  <div class="carousel-caption">
-                  </div>
-                </div>
-                <div class="item">
-                  <img src="image/banner.jpg" alt="..." class="img-responsive">
-                  <div class="carousel-caption">
-                  </div>
-                </div>
-              </div>
-
-              <!-- Controls -->
-              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-        </div>
-    </div><!-- container-fluid -->
-    </div><!-- /.container -->
-    <div class="container container-dropdown">
-        <nav class="navbar navbar-default " data-spy="affix" data-offset-top="350">
-
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="image/banner.jpg" alt="..." class="img-responsive">
+            <div class="carousel-caption">
             </div>
+          </div>
+          <div class="item">
+            <img src="image/banner.jpg" alt="..." class="img-responsive">
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="item">
+            <img src="image/banner.jpg" alt="..." class="img-responsive">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Ăn uống <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Quán coffee</a></li>
-                            <li><a href="#">Nhà hàng</a></li>
-                            <li><a href="#">Quán ăn</a></li>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <!-- container-fluid -->
+    </div>
+
+  </header>
+  <section>
+  <div class="container container-dropdown">
+                <div class="navbar navbar-default" data-spy="affix" data-offset-top="350" >
+                    <!-- Brand and toggle get grouped for better mobile display -->
+
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed  " data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Ăn uống
+                                    <span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Quán coffee</a></li>
+                                    <li><a href="#">Nhà hàng</a></li>
+                                    <li><a href="#">Quán ăn</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false"> Làm đẹp <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Tiệm cắt tóc/Gội đầu</a></li>
-                            <li><a href="#">Thẩm mĩ viện</a></li>
-                            <li><a href="#">Tiệm nail</a></li>
-                            <li><a href="#">Spa/massage</a></li>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Làm đẹp
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Tiệm cắt tóc/Gội đầu</a></li>
+                                    <li><a href="#">Thẩm mĩ viện</a></li>
+                                    <li><a href="#">Tiệm nail</a></li>
+                                    <li><a href="#">Spa/massage</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Sức khỏe <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Tập thể hình</a></li>
-                            <li><a href="#">Tập yoga</a></li>
-                            <li><a href="#">Phòng khám</a></li>
-                            <li><a href="#">Nha khoa</a></li>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Sức khỏe
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Tập thể hình</a></li>
+                                    <li><a href="#">Tập yoga</a></li>
+                                    <li><a href="#">Phòng khám</a></li>
+                                    <li><a href="#">Nha khoa</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Giải trí <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Khu chơi game</a></li>
-                            <li><a href="#">Rạp chiếu phim</a></li>
-                            <li><a href="#">Karaoke</a></li>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Giải trí
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Khu chơi game</a></li>
+                                    <li><a href="#">Rạp chiếu phim</a></li>
+                                    <li><a href="#">Karaoke</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Mua sắm <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Trung tâm tương mại</a></li>
-                            <li><a href="#">Siêu thị</a></li>
-                            <li><a href="#">Cửa hàng</a></li>
-                            <li><a href="#">Chợ</a></li>
+                         <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Sức khỏe
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Tập thể hình</a></li>
+                                    <li><a href="#">Tập yoga</a></li>
+                                    <li><a href="#">Phòng khám</a></li>
+                                    <li><a href="#">Nha khoa</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-</header>
-<section>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Mua sắm
+                                    <span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Trung tâm tương mại</a></li>
+                                    <li><a href="#">Siêu thị</a></li>
+                                    <li><a href="#">Cửa hàng</a></li>
+                                    <li><a href="#">Chợ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+               </div>
 
 
-</section>
+
+            </div>
+<div class="container">
+<nav class="col-sm-2" id="myScrollspy">
+      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="350">
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="glyphicon-triangle-right
+glyphicon glyphicon-triangle-right
+"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#section41">Section 4-1</a></li>
+            <li><a href="#section42">Section 4-2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+<div class="col-md-10">
+    <div class="row animation-element slide-left">
+      <h2 class="text-center">Đồ Ăn</h2>
+        <div class="col-md-4 pssta animation-element in-view">
+
+        <img src="image/doan1.jpg" class="img-responsive">
+
+        </div>
+
+        <div class="col-md-4 pssta animation-element in-view"><img src="image/doan1.jpg" class="img-responsive"></div>
+
+        <div class="col-md-4 pssta animation-element in-view"><img src="image/doan1.jpg" class="img-responsive"></div>
+
+    </div>
+    <div class="row animation-element slide-left">
+        <div class="col-md-4 pssta animation-element in-view"><img src="image/doan1.jpg" class="img-responsive"></div>
+
+        <div class="col-md-4 pssta animation-element in-view"><img src="image/doan1.jpg" class="img-responsive"></div>
+
+        <div class="col-md-4 pssta animation-element in-view"><img src="image/doan1.jpg" class="img-responsive"></div>
+
+    </div>
+    <div class="row animation-element slide-left">
+        <div class="col-md-4 pssta animation-element in-view"><img src="image/doan1.jpg" class="img-responsive"></div>
+
+        <div class="col-md-4 pssta animation-element in-view"><img src="image/doan1.jpg" class="img-responsive"></div>
+
+        <div class="col-md-4 pssta animation-element in-view"><img src="image/doan1.jpg" class="img-responsive"></div>
+
+    </div>
+</div>
+
+ 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-<script type="text/javascript" src="java.js"></script>
+</div>
+
+
+
+
+    </div>
+
+  </section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="java.js"></script>
 
 </body>
+
 </html>
