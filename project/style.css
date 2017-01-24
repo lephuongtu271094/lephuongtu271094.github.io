@@ -8,7 +8,6 @@
 body {
   background-color: #f8f8f8;
   font-family: Sans-serif;
-  height: 2000px;
   position: relative;
 }
 
@@ -29,6 +28,12 @@ body {
   background-color:#f8f8f8;
   border-color: #f8f8f8;
   box-shadow: 0 2px 3px #f8f8f8;
+}
+.nav {
+    padding-left: 20px;
+}
+.navbar-default .navbar-nav>li>a {
+    cursor: pointer;
 }
 
 .btn-dangnhap {
@@ -64,7 +69,7 @@ body {
   }
   .navbar-nav {
 	float: none;
-} 
+  } 
   .affix {
     position: static;
   }
@@ -72,6 +77,9 @@ body {
     position: absolute;
     right: 10px;
     border-radius: 50px;
+  }
+  .col-md-12{
+	padding-left: 130px: 
   }
 }
 
@@ -104,18 +112,19 @@ body {
     right: 10px;
     border-radius: 50px;
   }
+  .row-foter{
+	margin: auto;
+    width: 120px;
+}
+}
+.navbar-nav {
+ float: none;
 }
 
 .container-fluid {
   padding: 0;
 }
 
-@media (min-width: 1200px) {
-
-	.container-dropdown {
-		width: 656px;
-	}
-}
 
 textarea:hover,
 input:hover,
@@ -140,13 +149,13 @@ label:focus,
 }
 
 
-.glyphicon{
+.glyphicon-triangle-right{
 	font-size: 10px;
 	top: 0;
 }
 
 .slide-left {
-	margin-top: 50px;
+
   opacity: 0;
   -moz-transition: all 500ms linear;
   -webkit-transition: all 500ms linear;
@@ -167,4 +176,21 @@ label:focus,
   -ms-transform: translate(0px, 0px);
   transform: translate3d(0px, 0px, 0px);
 }
-/*animation slide left styled for testimonials*/
+
+
+
+footer {
+	margin-top: 50px;
+background: #6f6f6f;
+
+}
+
+.col-md-12 {
+	margin: 10px 0px;
+}
+.fa {
+	margin-right: 10px;
+}
+.sao {
+	color: rgba(255, 255, 0, 0.85);
+}

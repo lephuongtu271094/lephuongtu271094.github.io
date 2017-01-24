@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="font/css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="styletrangchu.css">
 </head>
 
 <body>
@@ -101,10 +102,12 @@
 
   </header>
   <section>
-  <div class="container container-dropdown">
-                <div class="navbar navbar-default" data-spy="affix" data-offset-top="350" >
-                    <!-- Brand and toggle get grouped for better mobile display -->
+<div class="container-fluid">
+<nav class="col-sm-2" id="myScrollspy">
 
+                     <div class="navbar navbar-default" data-spy="affix" data-offset-top="350" >
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                  
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed  " data-toggle="collapse"
                                 data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -114,17 +117,15 @@
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
-                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                <a id="btn-1" data-toggle="collapse" data-target="#submenu1" aria-expanded="false">
                                     Ăn uống
-                                    <span class="caret"></span>
                                 </a>
 
-                                <ul class="dropdown-menu">
+                                <ul  class="nav collapse" id="submenu1" role="menu" aria-labelledby="btn-1">
                                     <li><a href="#">Quán coffee</a></li>
                                     <li><a href="#">Nhà hàng</a></li>
                                     <li><a href="#">Quán ăn</a></li>
@@ -133,11 +134,10 @@
                         </ul>
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
-                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                <a id="btn-1" data-toggle="collapse" data-target="#submenu2" aria-expanded="false">
                                     Làm đẹp
-                                    <span class="caret"></span>
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul class="nav collapse" id="submenu2" role="menu" aria-labelledby="btn-1">
                                     <li><a href="#">Tiệm cắt tóc/Gội đầu</a></li>
                                     <li><a href="#">Thẩm mĩ viện</a></li>
                                     <li><a href="#">Tiệm nail</a></li>
@@ -147,25 +147,10 @@
                         </ul>
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
-                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                                    Sức khỏe
-                                    <span class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Tập thể hình</a></li>
-                                    <li><a href="#">Tập yoga</a></li>
-                                    <li><a href="#">Phòng khám</a></li>
-                                    <li><a href="#">Nha khoa</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                <a id="btn-1" data-toggle="collapse" data-target="#submenu3" aria-expanded="false">
                                     Giải trí
-                                    <span class="caret"></span>
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul  class="nav collapse" id="submenu3" role="menu" aria-labelledby="btn-1">
                                     <li><a href="#">Khu chơi game</a></li>
                                     <li><a href="#">Rạp chiếu phim</a></li>
                                     <li><a href="#">Karaoke</a></li>
@@ -174,11 +159,10 @@
                         </ul>
                          <ul class="nav navbar-nav">
                             <li class="dropdown">
-                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                <a id="btn-1" data-toggle="collapse" data-target="#submenu4" aria-expanded="false">
                                     Sức khỏe
-                                    <span class="caret"></span>
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul  class="nav collapse" id="submenu4" role="menu" aria-labelledby="btn-1">
                                     <li><a href="#">Tập thể hình</a></li>
                                     <li><a href="#">Tập yoga</a></li>
                                     <li><a href="#">Phòng khám</a></li>
@@ -188,12 +172,11 @@
                         </ul>
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
-                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                <a id="btn-1" data-toggle="collapse" data-target="#submenu5" aria-expanded="false">
                                     Mua sắm
-                                    <span class="caret"></span>
                                 </a>
 
-                                <ul class="dropdown-menu">
+                                <ul class="nav collapse" id="submenu5" role="menu" aria-labelledby="btn-1">
                                     <li><a href="#">Trung tâm tương mại</a></li>
                                     <li><a href="#">Siêu thị</a></li>
                                     <li><a href="#">Cửa hàng</a></li>
@@ -203,57 +186,374 @@
                         </ul>
                     </div><!-- /.navbar-collapse -->
                </div>
-
-
-
-            </div>
-<div class="container">
-<nav class="col-sm-2" id="myScrollspy">
-      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="350">
-        <li><a href="#section1">Section 1</a></li>
-        <li><a href="#section2">Section 2</a></li>
-        <li><a href="#section3">Section 3</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="glyphicon-triangle-right
-glyphicon glyphicon-triangle-right
-"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#section41">Section 4-1</a></li>
-            <li><a href="#section42">Section 4-2</a></li>
-          </ul>
-        </li>
-      </ul>
     </nav>
 <div class="col-md-10">
     <div class="row animation-element slide-left">
-      <h2 class="text-center">Đồ Ăn</h2>
-        <div class="col-md-4 pssta animation-element in-view">
+      <h2 class="text-center"><a href="#">Ăn Uống</a></h2>
+      <hr class="gachchan">
+        <div class="col-md-4  in-view">
+          <div class="hovereffect">
+            <img src="image/coffee1.jpg" class="img-responsive">
+          <div class="overlay">
+            <h3>Giảng Cafe - Cafe Trứng Sữa</h3>
+            <a class="info" href="#">Chi Tiết</a>
+        </div>
+       
+        </div>
+          <p><a href="#"><strong>Giảng Cafe - Cafe Trứng Sữa</strong> </a></p>
 
-        <img src="image/doan1.jpg" class="img-responsive">
+          <p>Đánh giá :
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o sao" aria-hidden="true"></i>
+            <i class="fa fa-star-o sao" aria-hidden="true"></i>
+          </p>
 
+         <p>Địa chỉ :<em> Ngõ 39 Nguyễn Hữu Huân, Quận Hoàn ...</em></p>
         </div>
 
-        <div class="col-md-4 pssta animation-element in-view"><img src="image/doan1.jpg" class="img-responsive"></div>
+        <div class="col-md-4  in-view">
+          <div class="hovereffect">
+            <img src="image/nhahang1.jpg" class="img-responsive">
+          <div class="overlay">
+            <h3>Sen Tây Hồ - Lạc Long Quân</h3>
+            <a class="info" href="#">Chi Tiết</a>
+        </div>
+       
+        </div>
+          <p><a href="#"><strong>Sen Tây Hồ - Lạc Long Quân</strong> </a></p>
 
-        <div class="col-md-4 pssta animation-element in-view"><img src="image/doan1.jpg" class="img-responsive"></div>
+          <p>Đánh giá :
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star-o sao" aria-hidden="true"></i>
+          </p>
+
+         <p>Địa chỉ :<em> 614 Lạc Long Quân, Quận Tây Hồ, Hà Nội</em></p>
+        </div>
+
+        <div class="col-md-4  in-view">
+          <div class="hovereffect">
+            <img src="image/quanan1.jpg" class="img-responsive">
+          <div class="overlay">
+            <h3>Quán Ăn Ngon - Phan Bội Châu</h3>
+            <a class="info" href="#">Chi Tiết</a>
+        </div>
+       
+        </div>
+          <p><a href="#"><strong>Quán Ăn Ngon - Phan Bội Châu</strong> </a></p>
+
+          <p>Đánh giá :
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star-o sao" aria-hidden="true"></i>
+          </p>
+
+         <p>Địa chỉ :<em> 18 Phan Bội Châu, Quận Hoàn Kiếm, Hà Nội</em></p>
+        </div>
 
     </div>
+
+    <hr>
+
     <div class="row animation-element slide-left">
-        <div class="col-md-4 pssta animation-element in-view"><img src="image/doan1.jpg" class="img-responsive"></div>
+    <h2 class="text-center"><a href="#">Làm Đẹp</a></h2>
+    <hr class="gachchan">
+         <div class="col-md-4  in-view">
+          <div class="hovereffect">
+            <img src="image/cattocgoidau1.jpg" class="img-responsive">
+          <div class="overlay">
+            <h3>Tuấn Salon - Bà Triệu</h3>
+            <a class="info" href="#">Chi Tiết</a>
+        </div>
+       
+        </div>
+          <p><a href="#"><strong>Tuấn Salon - Bà Triệu</strong> </a></p>
 
-        <div class="col-md-4 pssta animation-element in-view"><img src="image/doan1.jpg" class="img-responsive"></div>
+          <p>Đánh giá :
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star-o sao" aria-hidden="true"></i>
+          </p>
 
-        <div class="col-md-4 pssta animation-element in-view"><img src="image/doan1.jpg" class="img-responsive"></div>
+         <p>Địa chỉ :<em> 53D Bà Triệu, Quận Hoàn Kiếm, Hà Nội</em></p>
+        </div>
+
+         <div class="col-md-4  in-view">
+          <div class="hovereffect">
+            <img src="image/spa1.jpg" class="img-responsive">
+          <div class="overlay">
+            <h3>La Casa - Chill   &amp; Spa</h3>
+            <a class="info" href="#">Chi Tiết</a>
+        </div>
+       
+        </div>
+          <p><a href="#"><strong>La Casa - Chill  &amp; Spa</strong> </a></p>
+
+          <p>Đánh giá :
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star-o sao" aria-hidden="true"></i>
+          </p>
+
+         <p>Địa chỉ :<em> Tầng 2  &amp; 3, 10B Khúc Hạo, Quận Ba Đình...</em></p>
+        </div>
+
+        <div class="col-md-4  in-view">
+          <div class="hovereffect">
+            <img src="image/thammivien1.jpg" class="img-responsive">
+          <div class="overlay">
+            <h3>Thiên Ha Beauty - Trần Duy Hưng</h3>
+            <a class="info" href="#">Chi Tiết</a>
+        </div>
+       
+        </div>
+          <p><a href="#"><strong>Thiên Ha Beauty - Trần Duy Hưng</strong> </a></p>
+
+          <p>Đánh giá :
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star-o sao" aria-hidden="true"></i>
+          </p>
+
+         <p>Địa chỉ :<em>176 Trần Duy Hưng, Quận Cầu Giấy, Hà Nội</em></p>
+        </div>
 
     </div>
+
+    <hr>
+    
     <div class="row animation-element slide-left">
-        <div class="col-md-4 pssta animation-element in-view"><img src="image/doan1.jpg" class="img-responsive"></div>
+    <h2 class="text-center"><a href="#">Giải Trí</a></h2>
+    <hr class="gachchan">
+        <div class="col-md-4  in-view">
+          <div class="hovereffect">
+            <img src="image/Karaoke1.jpg" class="img-responsive">
+          <div class="overlay">
+            <h3>Karaoke Top One KTV - Ngọc Khánh</h3>
+            <a class="info" href="#">Chi Tiết</a>
+        </div>
+       
+        </div>
+          <p><a href="#"><strong>Karaoke Top One KTV - Ngọc Khánh</strong> </a></p>
 
-        <div class="col-md-4 pssta animation-element in-view"><img src="image/doan1.jpg" class="img-responsive"></div>
+          <p>Đánh giá :
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star-o sao" aria-hidden="true"></i>
+          </p>
 
-        <div class="col-md-4 pssta animation-element in-view"><img src="image/doan1.jpg" class="img-responsive"></div>
+         <p>Địa chỉ :<em>168 Ngọc Khánh, P. Giảng Võ, Quận Ba ...</em></p>
+        </div>
+
+        <div class="col-md-4  in-view">
+          <div class="hovereffect">
+            <img src="image/rapchieuphim1.jpg" class="img-responsive">
+          <div class="overlay">
+            <h3>Rạp Trung Tâm Chiếu Phim Quốc Gia</h3>
+            <a class="info" href="#">Chi Tiết</a>
+        </div>
+       
+        </div>
+          <p><a href="#"><strong>Rạp Trung Tâm Chiếu Phim Quốc Gia</strong> </a></p>
+
+          <p>Đánh giá :
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star-o sao" aria-hidden="true"></i>
+          </p>
+
+         <p>Địa chỉ :<em>87 Láng Hạ, Quận Ba Đình, Hà Nội</em></p>
+        </div>
+
+        <div class="col-md-4  in-view">
+          <div class="hovereffect">
+            <img src="image/khuchoigame1.jpg" class="img-responsive">
+          <div class="overlay">
+            <h3>Royal Bowling - Royal City</h3>
+            <a class="info" href="#">Chi Tiết</a>
+        </div>
+       
+        </div>
+          <p><a href="#"><strong>Royal Bowling - Royal City</strong> </a></p>
+
+          <p>Đánh giá :
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star-o sao" aria-hidden="true"></i>
+          </p>
+
+         <p>Địa chỉ :<em>Tầng B1, Royal City, 72A Nguyễn Trãi...</em></p>
+        </div>
 
     </div>
+
+    <hr>
+    
+    <div class="row animation-element slide-left">
+    <h2 class="text-center"><a href="#">Sức Khỏe</a></h2>
+    <hr class="gachchan">
+        <div class="col-md-4  in-view">
+          <div class="hovereffect">
+            <img src="image/thehinh1.jpg" class="img-responsive">
+          <div class="overlay">
+            <h3>Hòa Bình Gym - Nguyễn Khuyến</h3>
+            <a class="info" href="#">Chi Tiết</a>
+        </div>
+       
+        </div>
+          <p><a href="#"><strong>Hòa Bình Gym - Nguyễn Khuyến</strong> </a></p>
+
+          <p>Đánh giá :
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star-o sao" aria-hidden="true"></i>
+          </p>
+
+         <p>Địa chỉ :<em>54 - 56 Nguyễn Khuyến, Quận Đống Đa, Hà Nội</em></p>
+        </div>
+
+
+        <div class="col-md-4  in-view">
+          <div class="hovereffect">
+            <img src="image/thehinh1.jpg" class="img-responsive">
+          <div class="overlay">
+            <h3>Hòa Bình Gym - Nguyễn Khuyến</h3>
+            <a class="info" href="#">Chi Tiết</a>
+        </div>
+       
+        </div>
+          <p><a href="#"><strong>Hòa Bình Gym - Nguyễn Khuyến</strong> </a></p>
+
+          <p>Đánh giá :
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star-o sao" aria-hidden="true"></i>
+          </p>
+
+         <p>Địa chỉ :<em>54 - 56 Nguyễn Khuyến, Quận Đống Đa, Hà Nội</em></p>
+        </div>
+
+        <div class="col-md-4  in-view">
+          <div class="hovereffect">
+            <img src="image/thehinh1.jpg" class="img-responsive">
+          <div class="overlay">
+            <h3>Hòa Bình Gym - Nguyễn Khuyến</h3>
+            <a class="info" href="#">Chi Tiết</a>
+        </div>
+       
+        </div>
+          <p><a href="#"><strong>Hòa Bình Gym - Nguyễn Khuyến</strong> </a></p>
+
+          <p>Đánh giá :
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star-o sao" aria-hidden="true"></i>
+          </p>
+
+         <p>Địa chỉ :<em>54 - 56 Nguyễn Khuyến, Quận Đống Đa, Hà Nội</em></p>
+        </div>
+
+    </div>
+
+    <hr>
+    
+    <div class="row animation-element slide-left">
+    <h2 class="text-center"><a href="#">Mua Sắm</a></h2>
+    <hr class="gachchan">
+        <div class="col-md-4  in-view">
+          <div class="hovereffect">
+            <img src="image/tttmai1.jpg" class="img-responsive">
+          <div class="overlay">
+            <h3>Times City Shopping Center - Minh Khai</h3>
+            <a class="info" href="#">Chi Tiết</a>
+        </div>
+       
+        </div>
+          <p><a href="#"><strong>Times City Shopping Center - Minh Khai</strong> </a></p>
+
+          <p>Đánh giá :
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star-o sao" aria-hidden="true"></i>
+          </p>
+
+         <p>Địa chỉ :<em>458 Minh Khai, Quận Hai Bà Trưng, Hà Nội</em></p>
+        </div>
+
+        <div class="col-md-4  in-view">
+          <div class="hovereffect">
+            <img src="image/tttmai1.jpg" class="img-responsive">
+          <div class="overlay">
+            <h3>Times City Shopping Center - Minh Khai</h3>
+            <a class="info" href="#">Chi Tiết</a>
+        </div>
+       
+        </div>
+          <p><a href="#"><strong>Times City Shopping Center - Minh Khai</strong> </a></p>
+
+          <p>Đánh giá :
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star-o sao" aria-hidden="true"></i>
+          </p>
+
+         <p>Địa chỉ :<em>458 Minh Khai, Quận Hai Bà Trưng, Hà Nội</em></p>
+        </div>
+
+        <div class="col-md-4  in-view">
+          <div class="hovereffect">
+            <img src="image/tttmai1.jpg" class="img-responsive">
+          <div class="overlay">
+            <h3>Times City Shopping Center - Minh Khai</h3>
+            <a class="info" href="#">Chi Tiết</a>
+        </div>
+       
+        </div>
+          <p><a href="#"><strong>Times City Shopping Center - Minh Khai</strong> </a></p>
+
+          <p>Đánh giá :
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star sao" aria-hidden="true"></i>
+            <i class="fa fa-star-o sao" aria-hidden="true"></i>
+          </p>
+
+         <p>Địa chỉ :<em>458 Minh Khai, Quận Hai Bà Trưng, Hà Nội</em></p>
+        </div>
+
+    </div>
+
+    <hr>
+    
 </div>
 
  
@@ -268,6 +568,71 @@ glyphicon glyphicon-triangle-right
 
   </section>
 
+
+
+
+
+<footer>
+<div class="container">
+   <div class="row">
+    <div class="col-md-4">
+      <h3 class="text-center">Danh Mục :</h3>
+       <div class="row row-foter">
+        <div class="col-md-12">
+           <a href="#" class="dmft">trang chủ</a>
+        </div>
+        <div class="col-md-12 ">
+          <a href="#" class="dmft">ăn uống</a>
+        </div>
+        <div class="col-md-12 ">
+            <a href="#" class="dmft">Sức khỏe</a>
+        </div>
+        <div class="col-md-12">
+          <a href="#" class="dmft">Làm đẹp</a>
+        </div>
+        <div class="col-md-12">
+          <a href="#" class="dmft">Giải trí</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+       <h3 class="text-center">Liên Kết :</h3>
+       <div class="row row-foter">
+         <div class="col-md-12">
+           <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a>
+         </div>
+         <div class="col-md-12">
+           <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>instagram</a>
+         </div>
+         <div class="col-md-12">
+           <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>twitter</a>
+         </div>
+         <div class="col-md-12">
+           <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>google</a>
+         </div>
+         <div class="col-md-12">
+           <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i>youtube</a>
+         </div>
+       </div>
+    </div>
+    <div class="col-md-4">
+       <h3 >Liên Hệ :</h3>
+       <div class="row">
+         <div class="col-md-12">
+           hotline : 19000000
+         </div>
+       </div>
+       <h3 >Địa chỉ :</h3>
+       <div class="row">
+        <div class="col-md-12">
+          số 14 ngõ 4 nguyễn đình chiểu
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+ 
+</footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
