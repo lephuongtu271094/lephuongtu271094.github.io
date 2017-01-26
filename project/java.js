@@ -33,7 +33,9 @@ $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 
 $('.bttop').on('click' , function(){
-	$('html,body').animate({scrollTop:0},'slow');return false;
+	$('html,body').animate({
+		scrollTop:0
+	},2000);return false;
 });
 $(window).scroll(function(){
 	if($(this).scrollTop() > 500){
