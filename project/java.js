@@ -1,4 +1,6 @@
-$('ul.nav li.dropdown').hover(function() {
+
+$(function(){
+	$('ul.nav li.dropdown').hover(function() {
     $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(200);
   }, function() {
     $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(200);
@@ -29,3 +31,15 @@ function check_if_in_view() {
 
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
+
+$('.bttop').on('click' , function(){
+	$('html,body').animate({scrollTop:0},'slow');return false;
+});
+$(window).scroll(function(){
+	if($(this).scrollTop() > 500){
+		$('.bttop').fadeIn();
+	}else {
+		$('.bttop').fadeOut();
+	}
+});
+})

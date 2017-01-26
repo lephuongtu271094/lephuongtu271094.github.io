@@ -79,7 +79,7 @@ body {
     border-radius: 50px;
   }
   .col-md-12{
-	padding-left: 130px: 
+	padding-left: 130px;
   }
 }
 
@@ -193,4 +193,15 @@ background: #6f6f6f;
 }
 .sao {
 	color: rgba(255, 255, 0, 0.85);
+}
+.bttop {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+}
+.dropdown:hover {
+	background: white;
+}
+.navbar-default .navbar-nav>li>a:hover  {
+	color: blue;
 }
