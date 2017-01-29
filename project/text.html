@@ -10,6 +10,7 @@
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="font/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="stylechitiet.css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Trang Chủ</a>
+                <a class="navbar-brand" href="index.html">Trang Chủ</a>
             </div>
             <form class="navbar-form navbar-left">
 
@@ -188,9 +189,60 @@
         <div class="col-md-10">
             <div class="row animation-element slide-left">
                 <div class="col-md-6">
-                    <img src="image/doan1.jpg" class="img-thumbnail">
+                    <img src="image/coffee1.jpg" class="img-thumbnail">
                 </div>
-                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h3 class="text-uppercase">
+                        Giảng Cafe - Cafe Trứng Sữa
+                      </h3>
+                    </div>
+                    <div class="col-md-12">
+                      <h4 class="mr0">Đánh giá :
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star-o sao" aria-hidden="true"></i>
+                      </h4>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="texttran">
+                        <h4>Giới Thiệu : </h4>
+                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <h4>
+                        Liên Hệ : 190000000000
+                      </h4>
+                    </div>
+                    <div class="col-md-12">
+                      <h4>Địa chỉ :  Ngõ 39 Nguyễn Hữu Huân, Quận Hoàn Kiếm ,Hà Nội</h4>
+                    </div>
+                    <div class="col-md-12">
+                      <button type="button" class="btn btn-primary btn-datcho" data-toggle="modal" data-target="#myModal">Đặt Chỗ</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="row animation-element slide-left">
+              <div class="col-md-7">
+               
+
+
+
+
+
+              </div>
+              <div class="col-md-5">
+              <hr>
+              <h3>Xem Bản Đồ</h3>
+                <map>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9879440359296!2d105.85232466450475!3d21.033168385995907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfca3408ac50e7363!2zR2nhuqNuZyBDYWZl!5e0!3m2!1svi!2s!4v1485533856979" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </map>
+              </div>
             </div>
         </div>
 
@@ -267,6 +319,62 @@
 
     </div>
 </footer>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center">Giảng Cafe - Cafe Trứng Sữa</h4>
+        </div>
+        <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12">
+            <h5>Đánh giá của bạn :
+            </h5>
+          </div>
+          <div class="col-md-12">
+            <h5>Chi Tiết Đặt Bàn :</h5>
+          </div>
+          <div class="col-md-4">
+            <input type="date" name="" class="form-control">
+          </div>
+          <div class="col-md-4 ">
+            <select class="form-control">
+              <option >Giờ</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <select class="form-control">
+              <option>Số Lượng Người</option>
+            </select
+          </div>
+        </div>
+          <div class="col-md-12">
+            Thông Tin Liên Hệ :
+          </div>
+          <div class="col-md-12">
+            <input type="text" name="" placeholder="Họ Và Tên" class="form-control">
+          </div>
+           <div class="col-md-12">
+            <input type="text" name="" placeholder="Số Điện Thoại" class="form-control">
+          </div>
+           <div class="col-md-12">
+            <input type="text" name="" placeholder="Email" class="form-control">
+          </div>
+          <div class="col-md-12">
+            <textarea placeholder="Ghi Chú ..." class="form-control"></textarea>
+          </div>
+          <div class="col-md-12">
+            <input type="submit" name="" value="Đặt Chỗ" class="btn btn-primary btn-datcho">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->

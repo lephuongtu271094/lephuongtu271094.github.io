@@ -8,6 +8,9 @@ h2 {
     .gachchan {
         width: 150px;
     }
+    .col-md-12 {
+     padding-left: 0px;
+    }
 }
 
 .gachchan {

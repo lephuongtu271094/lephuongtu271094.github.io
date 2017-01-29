@@ -86,11 +86,11 @@ body {
         border-radius: 50px;
     }
 
-    .col-md-12 {
-        padding-left: 130px;
-    }
+    
 }
-
+.mr0 {
+	margin: 0;
+}
 /*dropdown*/
 
 @media (min-width: 768px) {
@@ -129,6 +129,9 @@ body {
     .row-foter {
         margin: auto;
         width: 120px;
+    }
+    .col-md-12 {
+        padding-left: 130px;
     }
 }
 
@@ -220,4 +223,7 @@ footer {
 
 .navbar-default .navbar-nav > li > a:hover {
     color: blue;
+}
+.texttran {
+	word-wrap: break-word;
 }
