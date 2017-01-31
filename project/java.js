@@ -39,12 +39,12 @@ $(function () {
     });
     $window.scroll(function () {
         if ($(this).scrollTop() > 500) {
-            $('.bttop').fadeIn();
+            $('.nut').fadeIn();
         } else {
-            $('.bttop').fadeOut();
+            $('.nut').fadeOut();
         }
     });
 })
 
 
-
+	

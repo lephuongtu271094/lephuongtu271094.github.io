@@ -8,7 +8,6 @@
 	.modal-dialog .col-md-12 {
 		padding-left: 15px;
 	}
-
 }
 h4 {
 	margin: 2px;
@@ -29,4 +28,8 @@ h4 {
 	background: #ffb000;
 	color: white;
 }
-
+	.btn-tlai {
+	position: fixed;
+    bottom: 20px;
+    right: 61px;
+}

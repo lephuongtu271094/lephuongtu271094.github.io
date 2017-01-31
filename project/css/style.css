@@ -130,9 +130,6 @@ body {
         margin: auto;
         width: 120px;
     }
-    .col-md-12 {
-        padding-left: 130px;
-    }
 }
 
 .navbar-nav {
