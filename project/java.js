@@ -4,6 +4,7 @@ $(function () {
     }, function () {
         $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(200);
     });
+
     var $animation_elements = $('.animation-element');
     var $window = $(window);
 
@@ -44,7 +45,9 @@ $(function () {
             $('.nut').fadeOut();
         }
     });
-})
 
-
+    $(".nav-tabs a").on('click', function () {
+        $(this).tab('show');
+    });
+});
 	

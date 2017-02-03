@@ -1,35 +1,39 @@
-@media(min-width: 768px){
-	.img-thumbnail {
-		margin: 30px;
-	}
-	.col-md-12 {
-     padding-left: 0px;
-	}
-	.modal-dialog .col-md-12 {
-		padding-left: 15px;
-	}
+@media (min-width: 768px) {
+    .img-thumbnail {
+        margin: 30px;
+    }
+
+    .col-md-12 {
+        padding-left: 0px;
+    }
+
+    .modal-dialog .col-md-12 {
+        padding-left: 15px;
+    }
 }
+
 h4 {
-	margin: 2px;
+    margin: 2px;
 }
+
 .btn-datcho {
-	width: 100%;
-	background-color : #28902b;
-	border-color: #28902b;
-	color: #ffeb00;
+    width: 100%;
+    background-color: #28902b;
+    border-color: #28902b;
+    color: #ffeb00;
 }
 
-
-
-.col-md-12>input , .col-md-12>textarea{
-	border-radius: 3px;
+.col-md-12 > input, .col-md-12 > textarea {
+    border-radius: 3px;
 }
-.modal-header{ 
-	background: #ffb000;
-	color: white;
+
+.modalheader {
+    background: #ffb000;
+    color: white;
 }
-	.btn-tlai {
-	position: fixed;
+
+.btn-tlai {
+    position: fixed;
     bottom: 20px;
     right: 61px;
 }

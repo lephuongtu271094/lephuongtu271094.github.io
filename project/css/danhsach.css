@@ -3,15 +3,18 @@
 h2 {
     font-family: 'Pacifico', cursive;
 }
+
 @media (min-width: 768px) {
     .gachchan {
         width: 150px;
         margin-left: 15px;
     }
+
     h2 {
         margin-left: 15px;
     }
 }
+
 .gachchan {
 
     border: 1px solid #d1794e;

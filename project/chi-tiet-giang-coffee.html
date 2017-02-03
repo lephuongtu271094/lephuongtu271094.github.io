@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>web dịch vụ</title>
+    <title>Giảng Cofe</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
@@ -72,7 +72,9 @@
 
             </form>
             <ul class="nav navbar-nav navbar-right btn-dangnhap">
-                <button class="btn btn-primary btn-dangnhap2 navbar-btn ">Đăng nhập</button>
+                <button class="btn btn-primary btn-dangnhap2 navbar-btn " data-toggle="modal"
+                        data-target="#modal-dangnhap">Đăng nhập
+                </button>
 
             </ul>
         </div>
@@ -354,12 +356,73 @@
 
     </div>
 </footer>
-<div class="modal fade" id="myModal" role="dialog">
+<div class="modal fade" id="modal-dangnhap" role="dialog">
     <div class="modal-dialog">
 
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#dang-nhap">Đăng Nhập</a></li>
+                    <li><a href="#dang-ky">Đăng Ký</a></li>
+                </ul>
+            </div>
+            <div class="modal-body">
+                <div class="tab-content">
+                    <div id="dang-nhap" class="tab-pane fade in active">
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Tên Đăng Nhập">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="psw" placeholder="Mật Khẩu">
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Lưu Mật Khẩu</label>
+                                <a href="#" style="float: right;">Đăng Nhập Bằng facebook</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block"> Đăng Nhập</button>
+                        </form>
+                    </div>
+                    <div id="dang-ky" class="tab-pane fade">
+                        <form role="form">
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Tên Đăng Nhập">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Mật Khâu">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Số Điện thoại">
+                            </div>
+                            <div class="form-group">
+
+                                <a href="#" style="float: right;">Đăng Nhập Bằng facebook</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Đăng Ký</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header modalheader">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title text-center">Giảng Cafe - Cafe Trứng Sữa</h4>
             </div>
@@ -411,12 +474,19 @@
         </div>
     </div>
 </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
-    <script type="text/javascript" src="java.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="java.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".nav-tabs a").click(function () {
+            $(this).tab('show');
+        });
+    });
+</script>
 
 
 </body>

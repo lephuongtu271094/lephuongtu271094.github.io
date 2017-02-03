@@ -5,13 +5,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .navbar-brand {
     padding: 0px;
 }
-.navbar-brand>img {
+
+.navbar-brand > img {
     height: 100%;
     width: 100%;
 }
+
 body {
     background-color: #f8f8f8;
     font-family: Sans-serif;
@@ -93,11 +96,12 @@ body {
         border-radius: 50px;
     }
 
-    
 }
+
 .mr0 {
-	margin: 0;
+    margin: 0;
 }
+
 /*dropdown*/
 
 @media (min-width: 768px) {
@@ -228,6 +232,7 @@ footer {
 .navbar-default .navbar-nav > li > a:hover {
     color: blue;
 }
+
 .texttran {
-	word-wrap: break-word;
+    word-wrap: break-word;
 }
