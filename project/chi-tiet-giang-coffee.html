@@ -16,19 +16,22 @@
 <body>
 <div id="fb-root"></div>
 <script>
-    window.fbAsyncInit = function() {
+    window.fbAsyncInit = function () {
         FB.init({
-            appId      : '583044221904883',
-            xfbml      : true,
-            version    : 'v2.8'
+            appId: '583044221904883',
+            xfbml: true,
+            version: 'v2.8'
         });
         FB.AppEvents.logPageView();
     };
 
-    (function(d, s, id){
+    (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
         js.src = "//connect.facebook.net/vi_VN/sdk.js";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
@@ -39,7 +42,7 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">Trang Chủ</a>
+                <a class="navbar-brand" href="index.html"><img src="image/logo.png" alt=""></a>
             </div>
             <form class="navbar-form navbar-left">
 
@@ -360,8 +363,8 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title text-center">Giảng Cafe - Cafe Trứng Sữa</h4>
             </div>
-            <div class="modal-body">
-                <div class="row">
+            <div class="modal-body row">
+                <div>
                     <div class="col-md-12">
                         <h5>Đánh giá của bạn :
                         </h5>
@@ -407,7 +410,7 @@
             </div>
         </div>
     </div>
-
+</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
