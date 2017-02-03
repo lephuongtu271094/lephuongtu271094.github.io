@@ -15,13 +15,24 @@
 
 <body>
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8&appId=1835633550042690";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '583044221904883',
+            xfbml      : true,
+            version    : 'v2.8'
+        });
+        FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/vi_VN/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 <header>
 
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -200,57 +211,62 @@
                     <img src="image/coffee1.jpg" class="img-thumbnail">
                 </div>
                 <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <h3 class="text-uppercase">
-                        Giảng Cafe - Cafe Trứng Sữa
-                      </h3>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="text-uppercase">
+                                Giảng Cafe - Cafe Trứng Sữa
+                            </h3>
+                        </div>
+                        <div class="col-md-12">
+                            <h4 class="mr0">Đánh giá :
+                                <i class="fa fa-star sao" aria-hidden="true"></i>
+                                <i class="fa fa-star sao" aria-hidden="true"></i>
+                                <i class="fa fa-star sao" aria-hidden="true"></i>
+                                <i class="fa fa-star sao" aria-hidden="true"></i>
+                                <i class="fa fa-star-o sao" aria-hidden="true"></i>
+                            </h4>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="texttran">
+                                <h4>Giới Thiệu : </h4>
+                                <p>
+                                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <h4>
+                                Liên Hệ : 190000000000
+                            </h4>
+                        </div>
+                        <div class="col-md-12">
+                            <h4>Địa chỉ : Ngõ 39 Nguyễn Hữu Huân, Quận Hoàn Kiếm ,Hà Nội</h4>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-primary btn-datcho" data-toggle="modal"
+                                    data-target="#myModal">Đặt Chỗ
+                            </button>
+                        </div>
                     </div>
-                    <div class="col-md-12">
-                      <h4 class="mr0">Đánh giá :
-                        <i class="fa fa-star sao" aria-hidden="true"></i>
-                        <i class="fa fa-star sao" aria-hidden="true"></i>
-                        <i class="fa fa-star sao" aria-hidden="true"></i>
-                        <i class="fa fa-star sao" aria-hidden="true"></i>
-                        <i class="fa fa-star-o sao" aria-hidden="true"></i>
-                      </h4>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="texttran">
-                        <h4>Giới Thiệu : </h4>
-                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <h4>
-                        Liên Hệ : 190000000000
-                      </h4>
-                    </div>
-                    <div class="col-md-12">
-                      <h4>Địa chỉ :  Ngõ 39 Nguyễn Hữu Huân, Quận Hoàn Kiếm ,Hà Nội</h4>
-                    </div>
-                    <div class="col-md-12">
-                      <button type="button" class="btn btn-primary btn-datcho" data-toggle="modal" data-target="#myModal">Đặt Chỗ</button>
-                    </div>
-                  </div>
                 </div>
             </div>
             <div class="row">
-              <div class="col-md-7">
-               
-                <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="5"></div>
-                <!-- class="fb-comments fb_iframe_widget_loader fb_iframe_widget fb_iframe_widget_fluid" -->
+                <div class="col-md-7">
+                    <hr>
+                    <h3>Bình Luận </h3>
+
+                    <div class="fb-comments" data-href="https://app.com" data-width="100%" data-numposts="5"></div>
+                    <!-- class="fb-comments fb_iframe_widget_loader fb_iframe_widget fb_iframe_widget_fluid" -->
 
 
-
-              </div>
-              <div class="col-md-5">
-              <hr>
-              <h3>Xem Bản Đồ</h3>
-                <map>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9879440359296!2d105.85232466450475!3d21.033168385995907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfca3408ac50e7363!2zR2nhuqNuZyBDYWZl!5e0!3m2!1svi!2s!4v1485533856979" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </map>
-              </div>
+                </div>
+                <div class="col-md-5">
+                    <hr>
+                    <h3>Xem Bản Đồ</h3>
+                    <map>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9879440359296!2d105.85232466450475!3d21.033168385995907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfca3408ac50e7363!2zR2nhuqNuZyBDYWZl!5e0!3m2!1svi!2s!4v1485533856979"
+                                width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </map>
+                </div>
             </div>
         </div>
 
@@ -321,84 +337,83 @@
         </div>
     </div>
     <div class="nut">
-    <div class="btn-tlai">
-        <a href="danh-sach-quan-coffee.html">
-        <img src="image/trolai.jpg" title="trở lại trang trước">
-    </a>
-    </div>
-    <div class="bttop">
-        <a href="#">
-            <img src="image/bttop.jpg" title="về đầu trang">
-        </a>
+        <div class="btn-tlai">
+            <a href="danh-sach-quan-coffee.html">
+                <img src="image/trolai.jpg" title="trở lại trang trước">
+            </a>
+        </div>
+        <div class="bttop">
+            <a href="#">
+                <img src="image/bttop.jpg" title="về đầu trang">
+            </a>
 
-    </div>
-        
+        </div>
+
     </div>
 </footer>
 <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title text-center">Giảng Cafe - Cafe Trứng Sữa</h4>
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title text-center">Giảng Cafe - Cafe Trứng Sữa</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5>Đánh giá của bạn :
+                        </h5>
+                    </div>
+                    <div class="col-md-12">
+                        <h5>Chi Tiết Đặt Bàn :</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="date" name="" class="form-control">
+                    </div>
+                    <div class="col-md-4 ">
+                        <select class="form-control">
+                            <option>Giờ</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-control">
+                            <option>Số Lượng Người</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    Thông Tin Liên Hệ :
+                </div>
+                <div class="col-md-12">
+                    <input type="text" name="" placeholder="Họ Và Tên" class="form-control">
+                </div>
+                <div class="col-md-12">
+                    <input type="text" name="" placeholder="Số Điện Thoại" class="form-control">
+                </div>
+                <div class="col-md-12">
+                    <input type="text" name="" placeholder="Email" class="form-control">
+                </div>
+                <div class="col-md-12">
+                    <textarea placeholder="Ghi Chú ..." class="form-control"></textarea>
+                </div>
+                <div class="col-md-12">
+                    <input type="submit" name="" value="Đặt Chỗ" class="btn btn-primary btn-datcho">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
         </div>
-        <div class="modal-body">
-        <div class="row">
-          <div class="col-md-12">
-            <h5>Đánh giá của bạn :
-            </h5>
-          </div>
-          <div class="col-md-12">
-            <h5>Chi Tiết Đặt Bàn :</h5>
-          </div>
-          <div class="col-md-4">
-            <input type="date" name="" class="form-control">
-          </div>
-          <div class="col-md-4 ">
-            <select class="form-control">
-              <option >Giờ</option>
-            </select>
-          </div>
-          <div class="col-md-4">
-            <select class="form-control">
-              <option>Số Lượng Người</option>
-            </select
-          </div>
-        </div>
-          <div class="col-md-12">
-            Thông Tin Liên Hệ :
-          </div>
-          <div class="col-md-12">
-            <input type="text" name="" placeholder="Họ Và Tên" class="form-control">
-          </div>
-           <div class="col-md-12">
-            <input type="text" name="" placeholder="Số Điện Thoại" class="form-control">
-          </div>
-           <div class="col-md-12">
-            <input type="text" name="" placeholder="Email" class="form-control">
-          </div>
-          <div class="col-md-12">
-            <textarea placeholder="Ghi Chú ..." class="form-control"></textarea>
-          </div>
-          <div class="col-md-12">
-            <input type="submit" name="" value="Đặt Chỗ" class="btn btn-primary btn-datcho">
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
     </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-<script type="text/javascript" src="java.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="java.js"></script>
 
 
 </body>
