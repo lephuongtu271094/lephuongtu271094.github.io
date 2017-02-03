@@ -14,6 +14,14 @@
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8&appId=1835633550042690";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <header>
 
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -187,7 +195,7 @@
             </div>
         </nav>
         <div class="col-md-10">
-            <div class="row animation-element slide-left">
+            <div class="row">
                 <div class="col-md-6">
                     <img src="image/coffee1.jpg" class="img-thumbnail">
                 </div>
@@ -227,11 +235,11 @@
                   </div>
                 </div>
             </div>
-            <div class="row animation-element slide-left">
+            <div class="row">
               <div class="col-md-7">
                
-
-
+                
+                <!-- class="fb-comments fb_iframe_widget_loader fb_iframe_widget fb_iframe_widget_fluid" -->
 
 
 
@@ -248,7 +256,7 @@
 
 
     </div>
-
+<div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5"></div>
 
 </section>
 
@@ -390,6 +398,8 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="java.js"></script>
+
+
 
 </body>
 
