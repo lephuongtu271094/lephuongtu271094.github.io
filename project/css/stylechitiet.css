@@ -10,8 +10,13 @@
     .modal-dialog .col-md-12 {
         padding-left: 15px;
     }
+    .star {
+        font-size:200%;
+    }
 }
-
+.star {
+    color : #EAE9E6;
+}
 h4 {
     margin: 2px;
 }
