@@ -5,11 +5,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .navbar-brand {
     padding: 0;
 }
-
+a:hover {
+    text-decoration: underline;
+}
 .navbar-brand > img {
     height: 100%;
     width: 100%;
@@ -42,9 +43,8 @@ body {
 }
 
 .nav {
-    padding-left: 20px;
+    padding-left: 5px;
 }
-
 .navbar-default .navbar-nav > li > a {
     cursor: pointer;
 }
