@@ -13,6 +13,14 @@ h2 {
     h2 {
         margin-left: 15px;
     }
+    .row-foter {
+        margin: auto;
+        width: 148px;
+    }
+    .row-lk {
+        margin: auto;
+        width: 132px;
+    }
 }
 
 .gachchan {
