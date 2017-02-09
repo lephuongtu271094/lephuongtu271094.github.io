@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Giảng Cofe</title>
+    <title>Danh Sách Quán Ăn</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
@@ -10,32 +10,10 @@
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="font/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/stylechitiet.css">
+    <link rel="stylesheet" type="text/css" href="css/danhsach.css">
 </head>
 
 <body>
-<div id="fb-root"></div>
-<script>
-    window.fbAsyncInit = function () {
-        FB.init({
-            appId: '583044221904883',
-            xfbml: true,
-            version: 'v2.8'
-        });
-        FB.AppEvents.logPageView();
-    };
-
-    (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-            return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/vi_VN/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
 <header>
 
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -79,6 +57,7 @@
             </ul>
         </div>
         <!-- /.navbar-collapse -->
+
     </nav>
     <!-- navbar navbar-default -->
 
@@ -123,6 +102,7 @@
     </div>
     <!-- container-fluid -->
 
+
 </header>
 <section>
     <div class="container-fluid">
@@ -144,14 +124,14 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li class="dropdown">
-                            <a data-toggle="collapse" data-target="#submenu1" aria-expanded="false">
+                            <a id="btn-1" data-toggle="collapse" data-target="#submenu1" aria-expanded="false">
                                 Ăn uống
                             </a>
 
                             <ul class="nav collapse" id="submenu1" role="menu" aria-labelledby="btn-1">
                                 <li><a href="danh-sach-quan-coffee.html">Quán coffee</a></li>
                                 <li><a href="#">Nhà hàng</a></li>
-                                <li><a href="#  ">Quán ăn</a></li>
+                                <li><a href="#">Quán ăn</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -212,73 +192,204 @@
         </nav>
         <div class="col-md-10">
             <div class="row">
-                <div class="col-md-6">
-                    <img src="image/coffee/coffee1.jpg" class="img-thumbnail">
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3 class="text-uppercase">
-                                Giảng Cafe - Cafe Trứng Sữa
-                            </h3>
+                <h2>Kết Quả Tìm Kiếm :</h2>
+                <hr>
+                <div class="col-md-4">
+                    <div class="hovereffect thumbnail">
+                        <img src="image/coffee/coffee1.jpg" class="img-responsive">
+                        <div class="overlay">
+                            <h3>Giảng Cafe - Cafe Trứng Sữa</h3>
+                            <a class="info" href="chi-tiet-giang-coffee.html">Chi Tiết</a>
                         </div>
-                        <div class="col-md-12">
-                            <h4 class="mr0">Đánh giá :
-                                <i class="fa fa-star sao" aria-hidden="true"></i>
-                                <i class="fa fa-star sao" aria-hidden="true"></i>
-                                <i class="fa fa-star sao" aria-hidden="true"></i>
-                                <i class="fa fa-star sao" aria-hidden="true"></i>
-                                <i class="fa fa-star-o sao" aria-hidden="true"></i>
-                            </h4>
-                        </div>
-                        <div class=" col-md-12 mr0">
-                            <div class="texttran">
-                                <h4>Giới Thiệu : </h4>
-                                <p class="mr0">
-                                    Cafe trứng ở Giảng có vị đậm đà của cafe và vị thơm ngậy của lòng đỏ trứng gà, thêm vị kem ngọt ngào. Tất cả đã tạo nên một hương vị dìu dịu, thơm thơm, ngọt ngọt. Đủ ấm cho những ngày đông thật lạnh.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <h4>
-                                Liên Hệ :  (04) 3294 0495 - 0903 479032
-                            </h4>
-                        </div>
-                        <div class="col-md-12">
-                            <h4>Địa chỉ : Ngõ 39 Nguyễn Hữu Huân, Quận Hoàn Kiếm ,Hà Nội</h4>
-                        </div>
-                        <div class="col-md-12">
-                            <button type="button" class="btn btn-primary btn-datcho" data-toggle="modal"
-                                    data-target="#myModal">Đặt Chỗ
-                            </button>
-                        </div>
+
                     </div>
+                    <p><a href="chi-tiet-giang-coffee.html"><strong>Giảng Cafe - Cafe Trứng Sữa</strong> </a></p>
+
+                    <p>Đánh giá :
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o sao" aria-hidden="true"></i>
+                        <i class="fa fa-star-o sao" aria-hidden="true"></i>
+                    </p>
+
+                    <p>Địa chỉ :<em> Ngõ 39 Nguyễn Hữu Huân, Quận Hoàn ...</em></p>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="hovereffect thumbnail">
+                        <img src="image/coffee/coffee2.jpg" class="img-responsive">
+                        <div class="overlay">
+                            <h3>Cora Cafe - Hòa Mã</h3>
+                            <a class="info" href="#">Chi Tiết</a>
+                        </div>
+
+                    </div>
+                    <p><a href="#"><strong>Cora Cafe - Hòa Mã</strong> </a></p>
+
+                    <p>Đánh giá :
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o sao" aria-hidden="true"></i>
+                        <i class="fa fa-star-o sao" aria-hidden="true"></i>
+                    </p>
+
+                    <p>Địa chỉ :<em> 24 Hòa Mã , Quận Hai Bà Trưng, Hà Nội </em></p>
+                </div>
+                <div class="col-md-4">
+                    <div class="hovereffect thumbnail">
+                        <img src="image/coffee/coffee3.jpg" class="img-responsive">
+                        <div class="overlay">
+                            <h3>The Coffee House - Hai Bà Trưng</h3>
+                            <a class="info" href="#">Chi Tiết</a>
+                        </div>
+
+                    </div>
+                    <p><a href="#"><strong>The Coffee House - Hai Bà Trưng</strong> </a></p>
+
+                    <p>Đánh giá :
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o sao" aria-hidden="true"></i>
+                        <i class="fa fa-star-o sao" aria-hidden="true"></i>
+                    </p>
+
+                    <p>Địa chỉ :<em> 23M Hai Bà Trưng, Quận Hoàn Kiếm, Hà Nội</em></p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-7">
-                    <hr>
-                    <h3>Bình Luận </h3>
+                <div class="col-md-4 ">
+                    <div class="hovereffect thumbnail">
+                        <img src="image/coffee/coffee4.jpg" class="img-responsive">
+                        <div class="overlay">
+                            <h3>Navy Coffee - Giảng Võ</h3>
+                            <a class="info" href="#">Chi Tiết</a>
+                        </div>
 
-                    <div class="fb-comments" data-href="https://app.com" data-width="100%" data-numposts="5"></div>
-                    <!-- class="fb-comments fb_iframe_widget_loader fb_iframe_widget fb_iframe_widget_fluid" -->
+                    </div>
+                    <p><a href="#"><strong>Navy Coffee - Giảng Võ</strong> </a></p>
 
+                    <p>Đánh giá :
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o sao" aria-hidden="true"></i>
+                        <i class="fa fa-star-o sao" aria-hidden="true"></i>
+                    </p>
 
+                    <p>Địa chỉ :<em> 107 Giảng Võ, Quận Đống Đa, Hà Nội</em></p>
                 </div>
-                <div class="col-md-5">
-                    <hr>
-                    <h3>Xem Bản Đồ</h3>
-                    <map>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9879440359296!2d105.85232466450475!3d21.033168385995907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfca3408ac50e7363!2zR2nhuqNuZyBDYWZl!5e0!3m2!1svi!2s!4v1485533856979"
-                                width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </map>
+
+                <div class="col-md-4">
+                    <div class="hovereffect thumbnail">
+                        <img src="image/coffee/coffee5.jpg" class="img-responsive">
+                        <div class="overlay">
+                            <h3>Angel In US Coffee - Lotte Center</h3>
+                            <a class="info" href="#">Chi Tiết</a>
+                        </div>
+
+                    </div>
+                    <p><a href="#"><strong>Angel In US Coffee - Lotte Center</strong> </a></p>
+
+                    <p>Đánh giá :
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o sao" aria-hidden="true"></i>
+                        <i class="fa fa-star-o sao" aria-hidden="true"></i>
+                    </p>
+
+                    <p>Địa chỉ :<em> Tầng 1 - Tầng 65, Lotte Center, 54 Liễu ...</em></p>
                 </div>
+                <div class="col-md-4">
+                    <div class="hovereffect thumbnail">
+                        <img src="image/coffee/coffee6.jpg" class="img-responsive">
+                        <div class="overlay">
+                            <h3>Hangout Cafe - Quán Thánh</h3>
+                            <a class="info" href="#">Chi Tiết</a>
+                        </div>
+
+                    </div>
+                    <p><a href="#"><strong>Hangout Cafe - Quán Thánh</strong> </a></p>
+
+                    <p>Đánh giá :
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star sao" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o sao" aria-hidden="true"></i>
+                        <i class="fa fa-star-o sao" aria-hidden="true"></i>
+                    </p>
+
+                    <p>Địa chỉ :<em> 86 Quán Thánh, Quận Ba Đình, Hà Nội</em></p>
+                </div>
+
             </div>
         </div>
+        <div class="modal fade" id="modal-dangnhap" role="dialog">
+            <div class="modal-dialog modaldialog ">
 
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#dang-nhap">Đăng Nhập</a></li>
+                            <li><a href="#dang-ky">Đăng Ký</a></li>
+                        </ul>
+                    </div>
+                    <div class="modal-body">
+                        <div class="tab-content">
+                            <div id="dang-nhap" class="tab-pane fade in active">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Tên Đăng Nhập">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id="psw" placeholder="Mật Khẩu">
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="">Lưu Mật Khẩu</label>
+                                        <a href="#" style="float: right;">Đăng Nhập Bằng facebook</a>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block"> Đăng Nhập</button>
+                                </form>
+                            </div>
+                            <div id="dang-ky" class="tab-pane fade">
+                                <form role="form">
 
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Tên Đăng Nhập">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Mật Khâu">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Số Điện thoại">
+                                    </div>
+                                    <div class="form-group">
+
+                                        <a href="#" style="float: right;">Đăng Nhập Bằng facebook</a>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block">Đăng Ký</button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </div>
-
-
 </section>
 
 
@@ -327,14 +438,14 @@
             </div>
             <div class="col-md-4">
                 <h3>Liên Hệ :</h3>
-                <div class="row mr0">
-                    <div class="col-md-12 pd0">
+                <div class="row">
+                    <div class="col-md-12 ">
                         hotline : 19000000
                     </div>
                 </div>
                 <h3>Địa chỉ :</h3>
-                <div class="row mr0">
-                    <div class="col-md-12 pd0">
+                <div class="row">
+                    <div class="col-md-12 ">
                         số 14 ngõ 4 nguyễn đình chiểu
                     </div>
                 </div>
@@ -342,146 +453,16 @@
         </div>
     </div>
     <div class="nut">
-        <div class="btn-tlai">
-            <a href="danh-sach-quan-coffee.html">
-                <img src="image/trolai.jpg" title="trở lại trang trước">
-            </a>
-        </div>
         <div class="bttop">
             <a href="#">
                 <img src="image/bttop.jpg" title="về đầu trang">
             </a>
 
         </div>
-
     </div>
+
 </footer>
-<div class="modal fade" id="modal-dangnhap" role="dialog">
-    <div class="modal-dialog modaldialog">
 
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#dang-nhap">Đăng Nhập</a></li>
-                    <li><a href="#dang-ky">Đăng Ký</a></li>
-                </ul>
-            </div>
-            <div class="modal-body">
-                <div class="tab-content">
-                    <div id="dang-nhap" class="tab-pane fade in active">
-                        <form role="form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Tên Đăng Nhập">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="psw" placeholder="Mật Khẩu">
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" value="">Lưu Mật Khẩu</label>
-                                <a href="#" style="float: right;">Đăng Nhập Bằng facebook</a>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-block"> Đăng Nhập</button>
-                        </form>
-                    </div>
-                    <div id="dang-ky" class="tab-pane fade">
-                        <form role="form">
-
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Tên Đăng Nhập">
-                            </div>
-
-                            <div class="form-group">
-                                <input type="password" class="form-control" placeholder="Mật Khâu">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="email">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Số Điện thoại">
-                            </div>
-                            <div class="form-group">
-
-                                <a href="#" style="float: right;">Đăng Nhập Bằng facebook</a>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-block">Đăng Ký</button>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
-            </div>
-        </div>
-
-    </div>
-</div>
-<div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog ">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header modalheader">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title text-center">Giảng Cafe - Cafe Trứng Sữa</h4>
-            </div>
-            <div class="modal-body row">
-                <div>
-                    <div class="col-md-12">
-                        <h5>Đánh giá của bạn :
-
-                        </h5>
-                        <div id="stars">
-                            <span id="star1" class="star fa fa-star" data-rating="1" ></span>
-                            <span id="star2" class="star fa fa-star" data-rating="2" ></span>
-                            <span id="star3" class="star fa fa-star" data-rating="3" ></span>
-                            <span id="star4" class="star fa fa-star" data-rating="4" ></span>
-                            <span id="star5" class="star fa fa-star" data-rating="5" ></span>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <h5>Chi Tiết Đặt Bàn :</h5>
-                    </div>
-                    <div class="col-md-4">
-                        <input type="date" name="" class="form-control">
-                    </div>
-                    <div class="col-md-4 ">
-                        <select class="form-control">
-                            <option>Giờ</option>
-                        </select>
-                    </div>
-                    <div class="col-md-4">
-                        <select class="form-control">
-                            <option>Số Lượng Người</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    Thông Tin Liên Hệ :
-                </div>
-                <div class="col-md-12">
-                    <input type="text" name="" placeholder="Họ Và Tên" class="form-control">
-                </div>
-                <div class="col-md-12">
-                    <input type="text" name="" placeholder="Số Điện Thoại" class="form-control">
-                </div>
-                <div class="col-md-12">
-                    <input type="text" name="" placeholder="Email" class="form-control">
-                </div>
-                <div class="col-md-12">
-                    <textarea placeholder="Ghi Chú ..." class="form-control"></textarea>
-                </div>
-                <div class="col-md-12">
-                    <input type="submit" name="" value="Đặt Chỗ" class="btn btn-primary btn-datcho">
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
@@ -493,17 +474,8 @@
         $(".nav-tabs a").click(function () {
             $(this).tab('show');
         });
-
-        $(".star").click(function() {
-            $(this).css("color","yellow");
-            $(this).prevAll().css("color","yellow");
-            $(this).nextAll().css("color","#EAE9E6");
-            $("#number_rating").css("color","black");
-            $("#number_rating").text($(this).attr("data-rating"));
-        });
-});
+    });
 </script>
-
 
 </body>
 
