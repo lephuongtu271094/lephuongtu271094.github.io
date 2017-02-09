@@ -13,6 +13,11 @@ h2 {
     h2 {
         margin-left: 15px;
     }
+    .mrl {
+        margin-top: 20px;
+        margin-left: 15px;
+        color: #33b7a6;
+    }
     .row-foter {
         margin: auto;
         width: 148px;
@@ -22,7 +27,15 @@ h2 {
         width: 132px;
     }
 }
-
+.mrl {
+    color: #33aab7;
+}
+.mrl>a {
+    color: #33aab7;
+}
+.mrl>a:hover {
+    color: #b75933;
+}
 .gachchan {
 
     border: 1px solid #d1794e;
