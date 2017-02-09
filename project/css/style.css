@@ -126,9 +126,7 @@ input::-webkit-calendar-picker-indicator {
 
     .affix {
         top: 60px;
-
     }
-
     .navbar-form .form-control {
         margin: 5px 10px;
     }
@@ -169,6 +167,12 @@ input::-webkit-calendar-picker-indicator {
     }
     .navbar-mrtop {
         margin-top: 15px;
+    }
+    .navbar-form .selec-with {
+        width: 174px;
+    }
+    .navbar-form .seac-with {
+        width: 300px;
     }
 }
 

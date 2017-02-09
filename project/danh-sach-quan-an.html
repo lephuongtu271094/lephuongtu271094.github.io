@@ -25,17 +25,20 @@
             <form class="navbar-form navbar-left">
 
                 <select class="form-control" id="car" onchange="ChangeCarList()">
-                    <option value="tinh-thanh" >- Thành Phố -</option>
-                    <option value="ha-noi" >Hà Nội</option>
-                    <option value="ho-chi-minh" >Hồ chí minh</option>
+                    <option value="tinh-thanh">- Thành Phố -</option>
+                    <option value="ha-noi">Hà Nội</option>
+                    <option value="ho-chi-minh">Hồ chí minh</option>
                 </select>
-                <select class="form-control" id="carmodel">
+                <select class="form-control selec-with" id="carmodel">
                     <option>- Quận / Huyện -</option>
                 </select>
                 <div class="form-group">
-                    <input type="text" class="form-control search" placeholder="Tìm Kiếm ..." list="datalist1" autofocus>
+                    <input type="text" class="form-control search seac-with" placeholder="Tìm Kiếm ..." list="datalist1"
+                           autofocus>
                     <datalist id="datalist1">
-                        <a href="#"><option value="Quán Ăn"></a>
+                        <a href="#">
+                            <option value="Quán Ăn">
+                        </a>
                         <option value="Ăn uống">
                         <option value="thích thì ăn">
                     </datalist>
@@ -562,8 +565,8 @@
     });
     var carsAndModels = {};
     carsAndModels['tinh-thanh'] = ['- Quận / Huyện -    '];
-    carsAndModels['ha-noi'] = ['- Quận / Huyện -', 'Quận Hoàn Kiếm', 'Quận Hai Bà trưng','Quận Ba Đình','Quận Thanh Xuân','Quận Hoàng Mai','Quận Đống Đa','Quận Long Biên','Quận Hà Đông','Quận Bắc Từ Liêm','Quận Nam Từ Liêm','Quận Tây Hồ','Quận Cầu Giấy','Huyện Đông Anh','Ba Vì','Chương Mỹ',];
-    carsAndModels['ho-chi-minh'] = ['- Quận / Huyện -', 'Quận 1', 'Quận 2', 'Quận 3', 'Quận 4', 'Quận 5', 'Quận 6', 'Quận 7', 'Quận 8', 'Quận 9', 'Quận 10', 'Quận 11', 'Quận 12','Quận Bình Thạnh','Quận Thủ Đức','Bình Chánh','Cần Giờ'];
+    carsAndModels['ha-noi'] = ['- Quận / Huyện -', 'Quận Hoàn Kiếm', 'Quận Hai Bà trưng', 'Quận Ba Đình', 'Quận Thanh Xuân', 'Quận Hoàng Mai', 'Quận Đống Đa', 'Quận Long Biên', 'Quận Hà Đông', 'Quận Bắc Từ Liêm', 'Quận Nam Từ Liêm', 'Quận Tây Hồ', 'Quận Cầu Giấy', 'Huyện Đông Anh', 'Ba Vì', 'Chương Mỹ',];
+    carsAndModels['ho-chi-minh'] = ['- Quận / Huyện -', 'Quận 1', 'Quận 2', 'Quận 3', 'Quận 4', 'Quận 5', 'Quận 6', 'Quận 7', 'Quận 8', 'Quận 9', 'Quận 10', 'Quận 11', 'Quận 12', 'Quận Bình Thạnh', 'Quận Thủ Đức', 'Bình Chánh', 'Cần Giờ'];
 
 
     function ChangeCarList() {
