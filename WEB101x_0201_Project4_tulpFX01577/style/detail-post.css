@@ -1,0 +1,15 @@
+.port-detail {
+    margin: 5px;
+}
+
+.port-detail ul {
+    margin-left: 20px;
+}
+.port-detail h4, img {
+    margin: 20px 0;
+}
+
+.date {
+    font-size: 12px;
+    margin-left: 10px;
+}
