@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.header-title a {
+    color: red;
+    font-size: 50px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-weight: 900;
+    font-family: 'Dokdo', cursive;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+} 
+
+.dropdown-menu {
+    position: absolute;
+    top: 95%;
+}
+
+.container-title {
+    margin-top: 10px;
+    border-bottom: 1px solid red;
+    margin-bottom: 15px;
+}
+
+.container-title h4 {
+    background: red;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.footer-title {
+    color: red;
+    font-size: 60px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-weight: 900;
+    font-family: 'Dokdo', cursive;
+}
+
+.footer {
+    background-color: black;
+    color: #fff;
+    padding: 70px 0;
+}
+
+.icon i {
+    width: 50px;
+    color: #fff;
+}
+
+.follow-us {
+    margin-top: 15px;
+}
+
+
+@media only screen and (min-width: 768px) { 
+    .contaier, .header, .wrapper-footer {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .contaier, .header, .wrapper-footer {
+        width: 80%;
+    }
+ }
